@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Praveenkumar S | Portfolio</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#0f172a;
+      color:white;
+      overflow-x:hidden;
+    }
+
+    /* Navbar */
+
+    .navbar{
+      background:rgba(15,23,42,0.95);
+      backdrop-filter:blur(10px);
+    }
+
+    .navbar-brand{
+      color:#38bdf8 !important;
+      font-weight:700;
+      font-size:1.4rem;
+    }
+
+    .nav-link{
+      color:white !important;
+      margin-left:15px;
+      transition:0.3s;
+      font-weight:500;
+    }
+
+    .nav-link:hover{
+      color:#38bdf8 !important;
+    }
+
+    /* Hero */
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      background:linear-gradient(to right,#0f172a,#111827);
+      padding-top:80px;
+    }
+
+    .hero h1{
+      font-size:3.8rem;
+      font-weight:700;
+      line-height:1.2;
+    }
+
+    .hero span{
+      color:#38bdf8;
+    }
+
+    .hero p{
+      color:#cbd5e1;
+      margin:25px 0;
+      font-size:1.1rem;
+    }
+
+    .hero img{
+      border:5px solid #38bdf8;
+      border-radius:50%;
+      object-fit:cover;
+      box-shadow:0 0 30px rgba(56,189,248,0.4);
+      transition:0.4s;
+    }
+
+    .hero img:hover{
+      transform:scale(1.05);
+    }
+
+    .btn-custom{
+      background:#38bdf8;
+      color:black;
+      border:none;
+      padding:12px 28px;
+      border-radius:12px;
+      font-weight:600;
+      transition:0.3s;
+      text-decoration:none;
+      display:inline-block;
+    }
+
+    .btn-custom:hover{
+      background:#0ea5e9;
+      transform:translateY(-3px);
+      color:black;
+    }
+
+    section{
+      padding:90px 0;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h2{
+      color:#38bdf8;
+      font-size:2.5rem;
+      font-weight:700;
+    }
+
+    /* Cards */
+
+    .card-custom{
+      background:#1e293b;
+      border:none;
+      border-radius:20px;
+      padding:30px;
+      transition:0.3s;
+      height:100%;
+    }
+
+    .card-custom:hover{
+      transform:translateY(-8px);
+      box-shadow:0 0 20px rgba(56,189,248,0.25);
+    }
+
+    /* Skills */
+
+    .skill-badge{
+      display:inline-block;
+      background:#334155;
+      padding:12px 20px;
+      border-radius:30px;
+      margin:10px;
+      transition:0.3s;
+      font-weight:500;
+    }
+
+    .skill-badge:hover{
+      background:#38bdf8;
+      color:black;
+    }
+
+    /* Projects */
+
+    .project-title{
+      color:#38bdf8;
+      font-weight:600;
+      margin-bottom:15px;
+    }
+
+    /* Contact */
+
+    .contact-box{
+      background:#111827;
+      border:1px solid #334155;
+      border-radius:20px;
+      padding:40px;
+      height:100%;
+    }
+
+    .contact-item{
+      display:flex;
+      align-items:center;
+      margin-bottom:30px;
+    }
+
+    .contact-item i{
+      font-size:2rem;
+      color:#38bdf8;
+      margin-right:20px;
+    }
+
+    .contact-item h6{
+      margin:0;
+      font-weight:600;
+    }
+
+    .contact-item p{
+      margin:0;
+      color:#cbd5e1;
+    }
+
+    /* Footer */
+
+    footer{
+      background:#020617;
+      text-align:center;
+      padding:25px 0;
+      color:#94a3b8;
+    }
+
+    .social-icons a{
+      color:white;
+      margin:0 10px;
+      font-size:1.4rem;
+      transition:0.3s;
+    }
+
+    .social-icons a:hover{
+      color:#38bdf8;
+    }
+
+    /* Responsive */
+
+    @media(max-width:768px){
+
+      .hero{
+        text-align:center;
+      }
+
+      .hero h1{
+        font-size:2.5rem;
+      }
+
+      .hero img{
+        margin-top:40px;
+        width:250px;
+      }
+
+      .contact-box{
+        margin-top:30px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+    <div class="container">
+
+      <a class="navbar-brand" href="#">
+        Praveenkumar S
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero" id="home">
+
+    <div class="container">
+
+      <div class="row align-items-center">
+
+        <div class="col-lg-7">
+
+          <h1>
+            Hi, I'm <span>Praveenkumar S</span>
+          </h1>
+
+          <h3 class="mt-3">
+            Computer Science Student & Full Stack Developer
+          </h3>
+
+          <p>
+            Passionate about AI-integrated applications,
+            responsive UI design, backend development,
+            and solving real-world problems using modern technologies.
+          </p>
+
+          <a href="#projects" class="btn-custom me-3">
+            View Projects
+          </a>
+
+          <a href="#contact" class="btn btn-outline-light">
+            Contact Me
+          </a>
+
+        </div>
+
+        <div class="col-lg-5 text-center">
+
+          <!-- ADD YOUR PHOTO INSIDE images/profile.jpg -->
+
+          <img
+            src="images/profile.jpg"
+            width="320"
+            class="img-fluid"
+            alt="Praveenkumar S"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- About -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>About Me</h2>
+      </div>
+
+      <div class="card-custom">
+
+        <p>
+          I am a Computer Science student with practical experience
+          in Python, Flask, MySQL, HTML, CSS, JavaScript,
+          Bootstrap and React.js.
+        </p>
+
+        <p>
+          I developed an AI-Based Smart Complaint Management System
+          with chatbot integration, secure authentication,
+          complaint tracking and admin dashboard functionality.
+        </p>
+
+        <p>
+          I enjoy building scalable responsive applications
+          and continuously learning modern web technologies.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Skills -->
+
+  <section id="skills">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="text-center">
+
+        <span class="skill-badge">HTML</span>
+        <span class="skill-badge">CSS</span>
+        <span class="skill-badge">JavaScript</span>
+        <span class="skill-badge">Bootstrap</span>
+        <span class="skill-badge">React.js</span>
+        <span class="skill-badge">Python</span>
+        <span class="skill-badge">Flask</span>
+        <span class="skill-badge">MySQL</span>
+        <span class="skill-badge">Git</span>
+        <span class="skill-badge">GitHub</span>
+        <span class="skill-badge">REST APIs</span>
+        <span class="skill-badge">Responsive Design</span>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Projects -->
+
+  <section id="projects">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="row g-4">
+
+        <div class="col-md-6">
+
+          <div class="card-custom">
+
+            <h4 class="project-title">
+              AI-Based Smart Complaint Management System
+            </h4>
+
+            <p>
+              Developed a full-stack complaint management system
+              using Flask and MySQL with AI chatbot integration,
+              authentication system and admin dashboard.
+            </p>
+
+            <p>
+              <strong>Technologies:</strong>
+              Python, Flask, MySQL, Bootstrap,
+              JavaScript, OpenAI API
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+          <div class="card-custom">
+
+            <h4 class="project-title">
+              Quiz Competition Web Application
+            </h4>
+
+            <p>
+              Developed a web-based quiz platform with timer,
+              score tracking, dynamic question management
+              and admin functionality.
+            </p>
+
+            <p>
+              <strong>Technologies:</strong>
+              HTML, CSS, JavaScript, Python
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Resume -->
+
+  <section id="resume">
+
+    <div class="container text-center">
+
+      <div class="section-title">
+        <h2>Resume</h2>
+      </div>
+
+      <p class="mb-4">
+        Download my latest resume to know more about my projects,
+        skills and experience.
+      </p>
+
+      <a href="resume.pdf" download class="btn-custom">
+
+        <i class="bi bi-download"></i>
+        Download Resume
+
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="row justify-content-center">
+
+        <div class="col-lg-10">
+
+          <div class="card-custom">
+
+            <div class="row align-items-center">
+
+              <!-- Left Side -->
+
+              <div class="col-lg-6 mb-5 mb-lg-0">
+
+                <h3 class="mb-4">
+                  Let's Work Together
+                </h3>
+
+                <p class="text-light-emphasis mb-4">
+
+                  Open for internships, collaborations,
+                  freelance projects and web development opportunities.
+
+                </p>
+
+                <div class="contact-item">
+
+                  <i class="bi bi-envelope-fill"></i>
+
+                  <div>
+
+                    <h6>Email</h6>
+
+                    <p>
+                      praveeenkumars07@gmail.com
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                  <i class="bi bi-telephone-fill"></i>
+
+                  <div>
+
+                    <h6>Phone</h6>
+
+                    <p>
+                      +91 8778816906
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                  <i class="bi bi-geo-alt-fill"></i>
+
+                  <div>
+
+                    <h6>Location</h6>
+
+                    <p>
+                      Tirupattur, Tamil Nadu
+                    </p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- Right Side -->
+
+              <div class="col-lg-6">
+
+                <div class="contact-box text-center">
+
+                  <h3 class="mb-4 text-info">
+                    Connect With Me
+                  </h3>
+
+                  <p class="text-secondary mb-4">
+
+                    Feel free to reach out through email
+                    or social platforms.
+
+                  </p>
+
+                  <div class="d-grid gap-3">
+
+                    <a
+                      href="mailto:praveeenkumars07@gmail.com"
+                      class="btn btn-outline-info btn-lg"
+                    >
+                      <i class="bi bi-envelope"></i>
+                      Send Email
+                    </a>
+
+                    <a
+                      href="#"
+                      class="btn btn-outline-light btn-lg"
+                    >
+                      <i class="bi bi-github"></i>
+                      GitHub Profile
+                    </a>
+
+                    <a
+                      href="#"
+                      class="btn btn-outline-primary btn-lg"
+                    >
+                      <i class="bi bi-linkedin"></i>
+                      LinkedIn Profile
+                    </a>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="social-icons mb-3">
+
+        <a href="#">
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a href="#">
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a href="#">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+      </div>
+
+      <p>
+        © 2026 Praveenkumar S. All Rights Reserved.
+      </p>
+
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
