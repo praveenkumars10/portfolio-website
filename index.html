@@ -8,414 +8,32 @@
 
   <title>Praveenkumar S | Portfolio</title>
 
-  <!-- Bootstrap -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-
-  <!-- Bootstrap Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-  />
+  <!-- External CSS Libraries -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
 
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      scroll-behavior:smooth;
-    }
-
-    body{
-      font-family:'Poppins',sans-serif;
-      background:#0f172a;
-      color:white;
-      overflow-x:hidden;
-    }
-
-    /* Navbar */
-
-    .navbar{
-      background:rgba(15,23,42,0.95);
-      backdrop-filter:blur(10px);
-    }
-
-    .navbar-brand{
-      color:#38bdf8 !important;
-      font-weight:700;
-      font-size:1.4rem;
-    }
-
-    .nav-link{
-      color:white !important;
-      margin-left:15px;
-      transition:0.3s;
-      font-weight:500;
-    }
-
-    .nav-link:hover{
-      color:#38bdf8 !important;
-    }
-
-    /* Hero */
-
-    .hero{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      background:linear-gradient(to right,#0f172a,#111827);
-      padding-top:80px;
-    }
-
-    .hero h1{
-      font-size:3.8rem;
-      font-weight:700;
-      line-height:1.2;
-    }
-
-    .hero span{
-      color:#38bdf8;
-    }
-
-    .hero p{
-      color:#cbd5e1;
-      margin:25px 0;
-      font-size:1.1rem;
-    }
-
-    .hero img{
-      border:5px solid #38bdf8;
-      border-radius:50%;
-      object-fit:cover;
-      box-shadow:0 0 30px rgba(56,189,248,0.4);
-      transition:0.4s;
-    }
-
-    .hero img:hover{
-      transform:scale(1.05);
-    }
-
-    .btn-custom{
-      background:#38bdf8;
-      color:black;
-      border:none;
-      padding:12px 28px;
-      border-radius:12px;
-      font-weight:600;
-      transition:0.3s;
-      text-decoration:none;
-      display:inline-block;
-    }
-
-    .btn-custom:hover{
-      background:#0ea5e9;
-      transform:translateY(-3px);
-      color:black;
-    }
-
-    section{
-      padding:90px 0;
-    }
-
-    .section-title{
-      text-align:center;
-      margin-bottom:60px;
-    }
-
-    .section-title h2{
-      color:#38bdf8;
-      font-size:2.5rem;
-      font-weight:700;
-    }
-
-    /* Cards */
-
-    .card-custom{
-      background:#1e293b;
-      border:none;
-      border-radius:20px;
-      padding:30px;
-      transition:0.3s;
-      height:100%;
-    }
-
-    .card-custom:hover{
-      transform:translateY(-8px);
-      box-shadow:0 0 20px rgba(56,189,248,0.25);
-    }
-
-    /* Skills */
-
-    .skill-badge{
-      display:inline-block;
-      background:#334155;
-      padding:12px 20px;
-      border-radius:30px;
-      margin:10px;
-      transition:0.3s;
-      font-weight:500;
-    }
-
-    .skill-badge:hover{
-      background:#38bdf8;
-      color:black;
-    }
-
-    /* Projects */
-
-    .project-title{
-      color:#38bdf8;
-      font-weight:600;
-      margin-bottom:15px;
-    }
-
-    /* Contact */
-
-    .contact-box{
-      background:#111827;
-      border:1px solid #334155;
-      border-radius:20px;
-      padding:40px;
-      height:100%;
-    }
-
-    .contact-item{
-      display:flex;
-      align-items:center;
-      margin-bottom:30px;
-    }
-
-    .contact-item i{
-      font-size:2rem;
-      color:#38bdf8;
-      margin-right:20px;
-    }
-
-    .contact-item h6{
-      margin:0;
-      font-weight:600;
-    }
-
-    .contact-item p{
-      margin:0;
-      color:#cbd5e1;
-    }
-
-    /* Footer */
-
-    footer{
-      background:#020617;
-      text-align:center;
-      padding:25px 0;
-      color:#94a3b8;
-    }
-
-    .social-icons a{
-      color:white;
-      margin:0 10px;
-      font-size:1.4rem;
-      transition:0.3s;
-    }
-
-    .social-icons a:hover{
-      color:#38bdf8;
-    }
-
-    /* Responsive */
-
-    @media(max-width:768px){
-
-      .hero{
-        text-align:center;
-      }
-
-      .hero h1{
-        font-size:2.5rem;
-      }
-
-      .hero img{
-        margin-top:40px;
-        width:250px;
-      }
-
-      .contact-box{
-        margin-top:30px;
-      }
-
-    }
-      /* Purple Light Theme */
-
-          body.light-theme{
-            background:#faf5ff;
-            color:#581c87;
-            transition:0.4s ease;
-          }
-
-          body.light-theme .navbar{
-            background:rgba(250,245,255,0.95);
-            backdrop-filter:blur(10px);
-          }
-
-          body.light-theme .navbar-brand{
-            color:#9333ea !important;
-          }
-
-          body.light-theme .nav-link{
-            color:#581c87 !important;
-          }
-
-          body.light-theme .nav-link:hover{
-            color:#9333ea !important;
-          }
-
-          body.light-theme .hero{
-            background:linear-gradient(to right,#faf5ff,#f3e8ff);
-          }
-
-          body.light-theme .hero span,
-          body.light-theme .section-title h2,
-          body.light-theme .project-title{
-            color:#9333ea;
-          }
-
-          body.light-theme .hero p,
-          body.light-theme p{
-            color:#6b21a8;
-          }
-
-          body.light-theme .card-custom{
-            background:#ffffff;
-            color:#581c87;
-            box-shadow:0 0 20px rgba(147,51,234,0.12);
-            transition:0.4s;
-          }
-
-          body.light-theme .card-custom:hover{
-            transform:translateY(-8px);
-            box-shadow:0 0 25px rgba(147,51,234,0.2);
-          }
-
-          body.light-theme .skill-badge{
-            background:#f3e8ff;
-            color:#581c87;
-            border:1px solid #d8b4fe;
-          }
-
-          body.light-theme .skill-badge:hover{
-            background:#9333ea;
-            color:white;
-          }
-
-          body.light-theme .contact-box{
-            background:#ffffff;
-            border:1px solid #d8b4fe;
-          }
-
-          body.light-theme .contact-item i{
-            color:#9333ea;
-          }
-
-          body.light-theme footer{
-            background:#ede9fe;
-            color:#581c87;
-          }
-
-          body.light-theme .social-icons a{
-            color:#581c87;
-          }
-
-          body.light-theme .social-icons a:hover{
-            color:#9333ea;
-          }
-
-          body.light-theme .btn-custom{
-            background:#9333ea;
-            color:white;
-          }
-
-          body.light-theme .btn-custom:hover{
-            background:#7e22ce;
-            color:white;
-          }
-
-          body.light-theme .btn-outline-light{
-            color:#581c87;
-            border-color:#9333ea;
-          }
-
-          body.light-theme .btn-outline-light:hover{
-            background:#9333ea;
-            color:white;
-          }
-          /* Purple Theme Mobile Navbar */
-
-            body.light-theme .navbar-toggler{
-              border-color:#9333ea;
-            }
-
-            body.light-theme .navbar-toggler-icon{
-              filter: invert(21%) sepia(92%) saturate(2675%) hue-rotate(259deg) brightness(90%) contrast(98%);
-            }
-
-            @media(max-width:991px){
-
-              body.light-theme .navbar-collapse{
-                background:#faf5ff;
-                padding:20px;
-                border-radius:15px;
-                margin-top:15px;
-                box-shadow:0 0 20px rgba(147,51,234,0.15);
-              }
-
-              body.light-theme .nav-link{
-                color:#581c87 !important;
-              }
-
-              body.light-theme .nav-link:hover{
-                color:#9333ea !important;
-              }
-
-            }
-                      /* Mobile Navbar Dark Theme */
-
-            .navbar-collapse{
-              background:transparent;
-            }
-
-            @media(max-width:991px){
-
-              .navbar-collapse{
-                background:#0f172a;
-                padding:20px;
-                border-radius:15px;
-                margin-top:15px;
-              }
-
-              .nav-link{
-                color:#e2e8f0 !important;
-                padding:12px 0;
-              }
-              .nav-link:hover{
-                color:#38bdf8 !important;
-              }
-              }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/theme.css" />
 
 </head>
 
 <body>
 
+  <!-- Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <!-- Custom Cursor Dot -->
+  <div class="cursor-dot"></div>
   <!-- Navbar -->
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -477,54 +95,52 @@
 
   <section class="hero" id="home">
 
-    <div class="container">
+  <div class="container">
+    <div class="row align-items-center">
 
-      <div class="row align-items-center">
+      <!-- Left Content -->
+      <div class="col-lg-7" data-aos="fade-right">
 
-        <div class="col-lg-7">
+        <h1>
+          Hi, I'm <span>Praveenkumar S</span>
+        </h1>
 
-          <h1>
-            Hi, I'm <span>Praveenkumar S</span>
-          </h1>
+        <h3 class="mt-3">
+          <span id="typed-text"></span>
+        </h3>
 
-          <h3 class="mt-3">
-            Computer Science Student & Full Stack Developer
-          </h3>
+        <p>
+          Passionate about AI-integrated applications,
+          responsive UI design, backend development,
+          and solving real-world problems using modern technologies.
+        </p>
 
-          <p>
-            Passionate about AI-integrated applications,
-            responsive UI design, backend development,
-            and solving real-world problems using modern technologies.
-          </p>
+        <a href="#projects" class="btn-custom me-3">
+          View Projects
+        </a>
 
-          <a href="#projects" class="btn-custom me-3">
-            View Projects
-          </a>
+        <a href="#contact" class="btn btn-outline-light">
+          Contact Me
+        </a>
 
-          <a href="#contact" class="btn btn-outline-light">
-            Contact Me
-          </a>
+      </div>
 
-        </div>
+      <!-- Right Image -->
+      <div class="col-lg-5 text-center" data-aos="fade-left">
 
-        <div class="col-lg-5 text-center">
-
-          <!-- ADD YOUR PHOTO INSIDE images/profile.jpg -->
-
-          <img
-            src="images/profile.jpg"
-            width="320"
-            class="img-fluid"
-            alt="Praveenkumar S"
-          />
-
-        </div>
+        <img
+          src="images/profile.jpg"
+          width="320"
+          class="img-fluid hero-img"
+          alt="Profile"
+        />
 
       </div>
 
     </div>
+  </div>
 
-  </section>
+</section>
 
   <!-- About -->
 
@@ -668,8 +284,7 @@
       </div>
 
       <p class="mb-4">
-        Download my latest resume to know more about my projects,
-        skills and experience.
+       Download my latest resume to learn more about my technical skills, projects, internship experience, and achievements.
       </p>
 
       <a href="praveenkumar_s_resume_2026.pdf" download class="btn-custom">
@@ -843,119 +458,66 @@
           <i class="bi bi-linkedin"></i>
         </a>
 
-        <a href="#">
-          <i class="bi bi-instagram"></i>
-        </a>
-
+        
       </div>
 
       <p>
-        © 2026 Praveenkumar S. All Rights Reserved.
+        © 2026 Praveenkumar S.<br>
+         All Rights Reserved. Designed & Developed by Praveenkumar S
       </p>
 
     </div>
 
   </footer>
 
+  <!-- Floating Social Icons -->
+  <div class="floating-social">
+
+    <a href="https://github.com/praveenkumars10">
+      <i class="bi bi-github"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/praveenkumar-s-dev">
+      <i class="bi bi-linkedin"></i>
+    </a>
+
+  </div>
+
+  <!-- External JavaScript Libraries (in correct order) -->
+
   <!-- Bootstrap JS -->
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
 
-document.addEventListener("DOMContentLoaded", function(){
+  <!-- AOS (Animate On Scroll) JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-  const themeToggle = document.getElementById("theme-toggle");
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-  // Load Saved Theme
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
-  if(localStorage.getItem("theme") === "light"){
+  <!-- Custom JavaScript Modules (in correct order) -->
 
-    document.body.classList.add("light-theme");
+  <!-- Theme Toggle Module (must run early to restore saved theme) -->
+  <script src="js/theme.js"></script>
 
-    themeToggle.innerHTML =
-      '<i class="bi bi-sun-fill"></i>';
+  <!-- Navbar Behavior Module -->
+  <script src="js/navbar.js"></script>
 
-  }
+  <!-- Custom Cursor Module -->
+  <script src="js/cursor.js"></script>
 
-  // Toggle Theme
+  <!-- Scroll Progress Bar Module -->
+  <script src="js/progress.js"></script>
 
-  themeToggle.addEventListener("click", function(){
+  <!-- Particles Configuration Module -->
+  
 
-    document.body.classList.toggle("light-theme");
+  <!-- Main Initialization Module (AOS & Typed.js) -->
+  <script src="js/main.js"></script>
 
-    if(document.body.classList.contains("light-theme")){
-
-      localStorage.setItem("theme","light");
-
-      themeToggle.innerHTML =
-        '<i class="bi bi-sun-fill"></i>';
-
-    }else{
-
-      localStorage.setItem("theme","dark");
-
-      themeToggle.innerHTML =
-        '<i class="bi bi-moon-stars-fill"></i>';
-
-    }
-
-  });
-
-});
-
-</script>
-<script>
-
-document.addEventListener("DOMContentLoaded", function(){
-
-  const navbarCollapse =
-    document.querySelector(".navbar-collapse");
-
-  const navbarToggler =
-    document.querySelector(".navbar-toggler");
-
-  const bsCollapse =
-    new bootstrap.Collapse(navbarCollapse, {
-      toggle: false
-    });
-
-  // Close when clicking outside
-
-  document.addEventListener("click", function(event){
-
-    const isClickInside =
-      navbarCollapse.contains(event.target) ||
-      navbarToggler.contains(event.target);
-
-    if(!isClickInside &&
-       navbarCollapse.classList.contains("show")){
-
-      bsCollapse.hide();
-
-    }
-
-  });
-
-  // Close when clicking nav links
-
-  document.querySelectorAll(".nav-link")
-    .forEach(link => {
-
-      link.addEventListener("click", () => {
-
-        if(navbarCollapse.classList.contains("show")){
-
-          bsCollapse.hide();
-
-        }
-
-      });
-
-    });
-
-});
-
-</script>
 </body>
 
 </html>
+

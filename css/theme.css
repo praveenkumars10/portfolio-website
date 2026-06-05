@@ -1,0 +1,132 @@
+/* ============================================
+   PORTFOLIO - LIGHT THEME
+   ============================================ */
+
+body.light-theme {
+  background: #faf5ff;
+  color: #581c87;
+  transition: 0.4s ease;
+}
+
+body.light-theme .navbar {
+  background: rgba(250, 245, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+body.light-theme .navbar-brand {
+  color: #9333ea !important;
+}
+
+body.light-theme .nav-link {
+  color: #581c87 !important;
+}
+
+body.light-theme .nav-link:hover {
+  color: #9333ea !important;
+}
+
+body.light-theme .hero {
+  background: linear-gradient(to right, #faf5ff, #f3e8ff);
+}
+
+body.light-theme .hero span,
+body.light-theme .section-title h2,
+body.light-theme .project-title {
+  color: #9333ea;
+}
+
+body.light-theme .hero p,
+body.light-theme p {
+  color: #6b21a8;
+}
+
+body.light-theme .card-custom {
+  background: #ffffff;
+  color: #581c87;
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.12);
+  transition: 0.4s;
+}
+
+body.light-theme .card-custom:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(147, 51, 234, 0.2);
+}
+
+body.light-theme .skill-badge {
+  background: #f3e8ff;
+  color: #581c87;
+  border: 1px solid #d8b4fe;
+}
+
+body.light-theme .skill-badge:hover {
+  background: #9333ea;
+  color: white;
+}
+
+body.light-theme .contact-box {
+  background: #ffffff;
+  border: 1px solid #d8b4fe;
+}
+
+body.light-theme .contact-item i {
+  color: #9333ea;
+}
+
+body.light-theme footer {
+  background: #ede9fe;
+  color: #581c87;
+}
+
+body.light-theme .social-icons a {
+  color: #581c87;
+}
+
+body.light-theme .social-icons a:hover {
+  color: #9333ea;
+}
+
+body.light-theme .btn-custom {
+  background: #9333ea;
+  color: white;
+}
+
+body.light-theme .btn-custom:hover {
+  background: #7e22ce;
+  color: white;
+}
+
+body.light-theme .btn-outline-light {
+  color: #581c87;
+  border-color: #9333ea;
+}
+
+body.light-theme .btn-outline-light:hover {
+  background: #9333ea;
+  color: white;
+}
+
+body.light-theme .navbar-toggler {
+  border-color: #9333ea;
+}
+
+body.light-theme .navbar-toggler-icon {
+  filter: invert(21%) sepia(92%) saturate(2675%) hue-rotate(259deg) brightness(90%) contrast(98%);
+}
+
+@media (max-width: 991px) {
+  body.light-theme .navbar-collapse {
+    background: #faf5ff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+    box-shadow: 0 0 20px rgba(147, 51, 234, 0.15);
+  }
+
+  body.light-theme .nav-link {
+    color: #581c87 !important;
+  }
+
+  body.light-theme .nav-link:hover {
+    color: #9333ea !important;
+  }
+}
