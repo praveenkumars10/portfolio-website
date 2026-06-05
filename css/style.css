@@ -297,6 +297,15 @@ footer {
   box-shadow: 0 0 20px #38bdf8, 0 0 40px #9333ea;
   transform: translate(-50%, -50%);
 }
+/* Hide custom cursor on mobile and tablets */
+
+@media (max-width: 768px) {
+
+  .cursor-dot{
+    display: none;
+  }
+
+}
 
 .floating-social {
   position: fixed;
