@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
     strings: [
       'Full Stack Developer',
       'AI Application Builder',
+      'Web Developer',
       'Frontend Designer',
       'Problem Solver'
     ],
